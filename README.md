@@ -1,2 +1,3 @@
-# homepage
-Woodbridge School Intranet Design (In Progress)
+# WBS Intranet Page
+
+Welcome contributions, make a pull request!
