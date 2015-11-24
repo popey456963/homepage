@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./font/fontawesome.css">
+    <link rel="stylesheet" href="./font/loto.css">
+    <link rel="stylesheet" href="css/normal.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/stocks.css">
+    <!--<link rel="stylesheet" href="css/tabs.css">-->
+    <!--<link rel="stylesheet" href="css/clock.css">-->
+    <title>Intranet :: WBS</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <main>
+
+        <input placeholder="Search on Google (Enter) | Wolfram Alpha (Shift + Enter) | Wikipedia (Ctrl + Enter)" id="q" type="text" x-webkit-speech autocomplete="off" />
+
+        <header></header>
+
+        <section class="card">
+            <h1>Quick Links</h1>
+            <br />
+            <center>
+                <div class="modal-frame"><div class="modal">
+                    <div class="modal-inset">
+                        <div class="button close"><i class="fa fa-close"></i></div>
+                        <div class="modal-body">
+                            <h3>Choose Lunch Menu</h3>
+                            <div id="menu1">Error, Not Loaded</div>
+                            <div id="menu2">Error, Not Loaded</div>
+                            <p><a href="http://www.woodbridge.suffolk.sch.uk/lunch-menus/">View Lunch Menu Website</a></p>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="modal-overlay"></div>
+                <div class="modal-overlay"></div>
+                <a href="#!" class="open"><img src="./img/random1.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random2.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random3.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random4.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random5.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random6.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random7.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random8.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random9.jpeg" alt="Image"></a>
+                <a href="https://google.co.uk"><img src="./img/random10.jpeg" alt="Image"></a>
+            </center>
+        </section>
+
+        <section class="card">
+            <div class="newsfeed"></div>
+        </section>
+
+        <section class="card">
+        <a href="#!" onclick="setNewFact()" class="nohighlight">
+            <h1 class="alignleft">Fact a Minute </h1><span class="alignright">(click or wait <span id="secondsleft">30</span> more seconds for a new fact)</span>
+            <div style="clear: both;"></div>
+            <div class="smallbreak"></div>
+            <h3><span id="fact"></span></h3>
+        </a>
+        </section>
+        
+        <section class="card">
+            <div id="weather_wrapper">
+                <div class="weatherCard">
+                    <div class="currentTemp">
+                        <span class="temp"><span id="temp">N/A</span>&deg;</span>
+                        <span class="location">Woodbridge</span>
+                    </div>s
+                    <div class="currentWeather">
+                        <span class="conditions">&#xf002;</span>
+                        <div class="info">
+                            <span class="rain"><span id="humidity">N/A</span> %</span>
+                            <span class="wind"><span id="windspeed">N/A</span> MPH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="invis">
+            <div class="container">
+                <div class="stock" id="stock-1">
+                    <span class="symbol">NVIDIA</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-2">
+                    <span class="symbol">EBAY</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-3">
+                    <span class="symbol">INTEL</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-4">
+                    <span class="symbol">APPLE</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-5">
+                    <span class="symbol">MICROSOFT</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-6">
+                    <span class="symbol">GOOGLE</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-7">
+                    <span class="symbol">FACEBOOk</span>
+                    <span class="change">0.00%</span>
+                </div>
+                <div class="stock" id="stock-8">
+                    <span class="symbol">TWITTER</span>
+                    <span class="change">0.00%</span>
+                </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+
+        </section>
+
+        <!--<section class="card">
+            <div class="container">
+              <div class="clock">
+                  <div class="hour"></div>
+                  <div class="minute"></div>
+                  <div class="second"></div>
+              </div>
+            </div>
+        </section>-->
+
+        <p class="credit">Designed by Alexander Craggs</p>
+
+    </main>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <!--<script src="js/moment.js"></script>-->
+    <script src="js/tab.js"></script>
+    <script src="js/google.js"></script>
+    <script src="js/newsfeed.js"></script>
+    <script src="js/fact.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/ga.js"></script>
+    <script src="js/stocks.js"></script>
+    <script src="js/magic.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/password.js"></script>
+    <script src="js/lunch.js"></script>
+    <!--<script src="js/tabs.js"></script>-->
+    <!--<script src="js/clock.js"></script>-->
+
+</body>
+
+</html>
