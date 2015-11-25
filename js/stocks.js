@@ -1,5 +1,4 @@
 $(document).ready(function() {
-            
 	var stocks = ['NVDA', 'EBAY', 'INTC', 'APPL', 'MSFT', 'GOOG', 'FB', 'TWTR'];
 	var stocksUrl = stocks.join('%20');
             

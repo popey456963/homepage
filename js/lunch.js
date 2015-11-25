@@ -22,7 +22,8 @@ $(document).on('ready', function(){
   });
 
 $.getJSON("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D'www.woodbridge.suffolk.sch.uk%2Flunch-menus%2F'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys", function(data) {
-	parsedData = data.query.results.body.div[0].div[1].div[1].div;
+	console.log(data);
+  parsedData = data.query.results.body.div[0].div[1].div[1].div;
 	seniorSchool = [parsedData[0].p[1].a.content.substring(16), parsedData[0].p[1].a.href];
 	boarders = [parsedData[1].p[1].a.content.substring(16), parsedData[1].p[1].a.href];
 	$('#menu1').html('<a href="' + seniorSchool[1] + '">' + seniorSchool[0] + ' for Senior School Pupils</a>');

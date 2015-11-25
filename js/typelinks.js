@@ -14,6 +14,10 @@ cheet('b b c', function() {
     window.location.href = "http://bbc.co.uk/";
 });
 
+cheet('i d e', function() {
+    window.location.href = "https://ideone.com/";
+});
+
 cheet('h a c k e r n e w s', function() {
     window.location.href = "https://news.ycombinator.com/";
 });
