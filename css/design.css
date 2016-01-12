@@ -3,12 +3,11 @@
 * {
     font-family: 'Roboto', sans-serif;
     line-height: 1.2;
-    vertical-align: middle
-    zoom: 150%;
+    vertical-align: middle;
 }
 
 body {
-    background: #222
+    background: #222;
 }
 
 img {
@@ -21,6 +20,7 @@ img {
 }
 
 main {
+    top: -310px;
     display: block;
     position: relative;
     width: 50rem;
@@ -224,4 +224,8 @@ h2 {
 
 .menu {
     width: 100%;
+}
+
+.black {
+    color:black;
 }

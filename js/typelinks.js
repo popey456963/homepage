@@ -35,5 +35,17 @@ cheet ('c 9', function() {
 });
 
 cheet ('p e r i o d i c', function() {
-	document.write("<iframe src=\"./templates/periodic.html\" style=\"position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;\">Your browser doesn't support iframes</iframe>");
+    periodic();
 });
+
+cheet ('d e s m o s', function() {
+    desmos();
+})
+
+function periodic() {
+    document.write("<iframe src=\"./templates/periodic.html\" style=\"position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;\">Your browser doesn't support iframes</iframe>");
+}
+
+function desmos() {
+    document.write('<div id="calculator" style="width: 50rm; height: 400px;"></div><script onload="initDesmos()" src="js/desmos.js"></script>')
+}

@@ -1,29 +1,3 @@
-.fancy-btn {
-  -webkit-appearance: none;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  position: relative;
-  top: 50%;
-  display: block;
-  min-width: 10%;
-  line-height: 55px;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding: 0 10px;
-  background-color: #F2594B;
-  color: #FFF;
-  border-radius: 3px;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.fancy-btn:hover {
-  background-color: #f46f63;
-}
-
 .modal-overlay {
   position: absolute;
   top: 0;

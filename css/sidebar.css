@@ -1,0 +1,132 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import "../font/roboto.css";
+
+[class*="entypo-"]:before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: 'entypo', sans-serif;
+}
+
+.b li [class*="entypo-"] {
+  display: inline-block;
+  position: relative;
+  left: 105px;
+  transform: translateX(0);
+  transition: all .3s ease-in-out;
+  transition-delay: .1s;
+}
+
+.b > ul:hover li [class*="entypo-"] {
+  transform: translateX(-110px);
+  transition-delay: 0;
+}
+
+.side-panel {
+  padding: 30px 0;
+}
+.side-panel:nth-child(2n) {
+  background: #483430;
+}
+.side-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side-panel > ul > li:first-child {
+  border-top-right-radius: 3px;
+}
+.side-panel > ul > li:first-child a {
+  padding-top: 13px;
+}
+.side-panel > ul > li:last-child {
+  border-bottom-right-radius: 3px;
+}
+.side-panel > ul > li:last-child a {
+  padding-bottom: 13px;
+}
+.side-panel > ul ul {
+  width: 150px;
+  padding-left: 10px;
+  display: none;
+  position: relative;
+  top: 0;
+  left: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+.side-panel > ul ul li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-right-color: #efefef;
+}
+.side-panel > ul ul li:first-child:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #efefef;
+  border-right-color: inherit;
+}
+.side-panel > ul ul li:first-child:hover {
+  border-right-color: #fff;
+}
+.side-panel > ul ul li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.side-panel li {
+  position: relative;
+  background: #efefef;
+}
+.side-panel li:hover {
+  background: #fff;
+}
+.side-panel li:hover > ul {
+  display: block;
+}
+.side-panel a {
+  display: inline-block;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.b .menu-item {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+.b > ul {
+  position: relative;
+  left: -110px;
+  transform: translate(0) translateZ(0);
+  width: 150px;
+  transition: transform .3s .1s ease-in-out;
+}
+.b > ul:hover {
+  transform: translateX(110px);
+  transition: all .3s ease-in-out;
+}
+.b > ul:hover .menu-item {
+  opacity: 1;
+  transition: opacity .3s .2s ease-in-out;
+}
+.b > ul ul {
+  display: block;
+  opacity: 0;
+  transform: translate(-100%);
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
+.b li:hover ul {
+  opacity: 1;
+  transform: translate(0);
+}

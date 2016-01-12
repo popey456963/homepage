@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="css/design.css">
     <link rel="stylesheet" href="css/stocks.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/toggle.css">
 
     <!-- Meta information -->
     <title>Intranet :: WBS</title>
@@ -25,6 +28,18 @@
 </head>
 
 <body>
+    <div class="side-panel b">
+      <ul>
+        <li><a href="http://bbc.co.uk/" class="black"><span class="entypo-plus-circled"></span><span class="menu-item">bbc</span></a>
+        <li><a href="http://wolframalpha.com/" class="black"><span class="entypo-mail"></span><span class="menu-item">Wolfram</span></a></li>
+        <li><a onclick="periodic()"><span class="entypo-heart"></span><span class="menu-item">Periodic</span></a></li>
+        <li><a onclick="desmos()"><span class="entypo-doc-text-inv"></span><span class="menu-item">Desmos</span></a></li>
+        <li><a href="https://github.com/" class="black"><span class="entypo-layout"></span><span class="menu-item">Github</span></a></li>
+        <li><a><span class="entypo-rocket"></span><span class="menu-item">Rocket</span></a></li>
+        <li><a><span class="entypo-cog"></span><span class="menu-item">Settings</span></a></li>
+      </ul>
+    </div>
+
     <main>
 
         <input placeholder="Search on Google (Enter) | Wolfram Alpha (Shift + Enter) | Wikipedia (Ctrl + Enter)" id="q" type="text" x-webkit-speech autocomplete="off" />
@@ -55,7 +70,7 @@
         <!-- RANDOM FACTS -->
         <section class="card">
         <a href="#!" onclick="setNewFact()" class="nohighlight">
-            <h1 class="alignleft">Fact a Minute </h1><span class="alignright">(click or wait <span id="secondsleft">30</span> more seconds for a new fact)</span>
+            <h1 class="alignleft">Fact a Minute </h1><span class="alignright">(click or wait <span id="secondsleft">N/A</span> more seconds for a new fact)</span>
             <div style="clear: both;"></div>
             <div class="smallbreak"></div>
             <h3><span id="fact"></span></h3>
@@ -126,11 +141,15 @@
 
     <!-- Required libraries -->
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/ga.js"></script>
     <script src="js/md5.js"></script>
     <script src="js/magic.js"></script>
     <script src="js/xml2json.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/velocity-ui.js"></script>
+    <script src="js/modern.js"></script>
 
     <!-- JS scripts for each element -->
     <script src="js/google.js"></script>
@@ -140,6 +159,9 @@
     <script src="js/stocks.js"></script>
     <script src="js/lunch.js"></script>
     <script src="js/typelinks.js"></script>
+    <script src="js/desmos.js"></script>
+    <script src="js/desmosscript.js"></script>
+    <script src="js/nav.js"></script>
 
 </body>
 
